@@ -64,7 +64,8 @@ public class PhysicalBook extends Book {
 
     /**
      * Changes wether the book is currently available or not.
-     * @param available
+     *
+     * @param available new availability.
      */
     public void setAvailable(boolean available) {
         this.available = available;

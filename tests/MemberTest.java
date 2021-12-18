@@ -44,21 +44,24 @@ class MemberTest {
         assert m1.getMessages() != "yo";
     }
 
+    /**
+     * Tests to show userId Auto-generated instead of userId error. Will be different
+     * every time as every test, "new" user is added.
+     *
+     */
     @Test
     void getUserId() {
-        //Tested in makeUserId.
+        m1.getUserId();
     }
 
     /**
-     * Tests making a new user id & how the getUserId
-     * method works before and after UserIs creation.
-     * Tests getUserId before & after.
+     * Tests that adding a member to the member list (BeforeEach)
+     * already auto-generated a userId. So it should not be empty String.
      */
     @Test
     void makeUserId() {
-        assert m1.getUserId() == "";
-        m1.makeUserId();
         assert m1.getUserId() != "";
+
 
     }
 
